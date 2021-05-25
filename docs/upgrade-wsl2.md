@@ -14,13 +14,13 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-3. ***Restart and enable virtualization in BIOS/UEFI.***
+## 3. *Restart and Enable Virtualization in BIOS/UEFI
 
 ## 4. Download and Install the Linux Kernel Update Package
 
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
-## 5. Next Steps to Upgrade Existing Distros
+## 5. Upgrade Existing Distros
 
 To make subsequent installations use WSL 2, run the following:
 
@@ -41,15 +41,13 @@ NAME            STATE           VERSION
 * Ubuntu-18.04    Stopped         1
 ```
 
-Then, run the following to complete the upgrade (might take good minutes, and will fail if, for instance, virtualization was not enabled in BIOS):
+Then, run the following to complete the upgrade (might take good minutes, and will fail if, for instance, virtualization was not enabled in BIOS in step 3):
 
 ```bash
 wsl --set-version Ubuntu-18.04 2
 ```
 
 where `Ubuntu-18.04` replaces the name in the output of `wsl -l -v`.
-
-## Checking It Worked
 
 Run `wsl -l -v` again and the `VERSION` column should now display `2`.
 
