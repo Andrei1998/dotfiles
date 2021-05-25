@@ -43,7 +43,7 @@ NAME            STATE           VERSION
 * Ubuntu-18.04    Stopped         1
 ```
 
-Then, run the following to complete the upgrade (might take good minutes, and will fail if, for instance, virtualization was not enabled in BIOS in step 3):
+Then, run the following to complete the upgrade (might take some good minutes, and will fail if, for instance, virtualization was not enabled in BIOS in step 3):
 
 ```bash
 wsl --set-version Ubuntu-18.04 2
