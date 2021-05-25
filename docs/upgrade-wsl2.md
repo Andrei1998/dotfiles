@@ -18,7 +18,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 ## 4. Download and Install the Linux Kernel Update Package
 
-https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+Just run the following installer: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 ## 5. Upgrade Existing Distros
 
