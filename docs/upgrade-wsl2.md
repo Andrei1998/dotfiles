@@ -51,5 +51,5 @@ where `Ubuntu-18.04` replaces the name in the output of `wsl -l -v`.
 
 # References
 
-https://docs.microsoft.com/ro-ro/windows/wsl/install-win10
-https://admcpr.com/how-to-upgrade-wsl-1-to-wsl-2/
+* https://docs.microsoft.com/ro-ro/windows/wsl/install-win10
+* https://admcpr.com/how-to-upgrade-wsl-1-to-wsl-2/
