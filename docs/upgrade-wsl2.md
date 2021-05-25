@@ -1,26 +1,26 @@
-The first steps follow what can be found online, but most places tell you how to upgrade WSL, but not how to upgrade existing installed distros.
+# Upgrading to WSL 2
 
-**Note** Run all commands in PowerShell with admin rights. 
+The first steps follow what can be found online, but most places tell you how to upgrade WSL, but not how to upgrade existing installed distros. **Note:** run all commands in PowerShell with admin rights. 
 
-# Enable the Windows Subsystem for Linux
+## 1. Enable the Windows Subsystem for Linux
 
 ```bash
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-# Enable Virtual Machine Feature
+## 2. Enable Virtual Machine Feature
 
 ```bash
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-***Restart and enable virtualization in BIOS/UEFI.***
+3. ***Restart and enable virtualization in BIOS/UEFI.***
 
-# Download and Install the Linux Kernel Update Package
+## 4. Download and Install the Linux Kernel Update Package
 
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
-# Next Steps to Upgrade Existing Distros
+## 5. Next Steps to Upgrade Existing Distros
 
 To make subsequent installations use WSL 2, run the following:
 
@@ -49,11 +49,11 @@ wsl --set-version Ubuntu-18.04 2
 
 where `Ubuntu-18.04` replaces the name in the output of `wsl -l -v`.
 
-# Checking It Worked
+## Checking It Worked
 
 Run `wsl -l -v` again and the `VERSION` column should now display `2`.
 
-# References
+## References
 
 * https://docs.microsoft.com/ro-ro/windows/wsl/install-win10
 * https://admcpr.com/how-to-upgrade-wsl-1-to-wsl-2/
