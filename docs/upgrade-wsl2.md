@@ -38,7 +38,7 @@ which prints a list like the following:
 
 ```text
 NAME            STATE           VERSION
-* Ubuntu-18.04    Stopped         2
+* Ubuntu-18.04    Stopped         1
 ```
 
 Then, run the following to complete the upgrade (might take good minutes, and will fail if, for instance, virtualization was not enabled in BIOS):
@@ -48,6 +48,10 @@ wsl --set-version Ubuntu-18.04 2
 ```
 
 where `Ubuntu-18.04` replaces the name in the output of `wsl -l -v`.
+
+# Checking It Worked
+
+Run `wsl -l -v` again and the `VERSION` column should now display `2`.
 
 # References
 
