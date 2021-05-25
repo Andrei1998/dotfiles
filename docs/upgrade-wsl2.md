@@ -14,7 +14,9 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-## 3. **Restart** and Enable Virtualization in BIOS/UEFI
+## 3. Restart and Enable Virtualization in BIOS/UEFI
+
+**Restart** is still required if virtualization is already enabled.
 
 ## 4. Download and Install the Linux Kernel Update Package
 
