@@ -1,6 +1,6 @@
 # Installation Guide
 
-## 1. Clone Repo with Submodule Cloning
+## 1. Clone Repository with Submodule Cloning
 
 Clone with submodule cloning:
 
